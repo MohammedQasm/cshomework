@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page Movie Roll</title>
+    <style>
+        @keyframes backgroundColorChange {
+            0% { background-color: white; color: maroon; }
+            50% { background-color: maroon; color: white; }
+            100% { background-color: white; color: maroon; }
+        }
+        .animated-header {
+            padding: 20px;
+            position: relative;
+            animation: backgroundColorChange 3s infinite alternate ease-in-out;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        ul li {
+            display: inline-block;
+            padding: 15px;
+            position: relative;
+            transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+        }
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: inline-block;
+        }
+        ul li:hover {
+            transform: scale(1.2);
+            font-weight: bold;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+        }
+        .dropdown a {
+            display: block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .dropdown a:hover {
+            background-color: maroon;
+        }
+        .contact:hover .dropdown {
+            display: block;
+        }
+        /* Image Grid */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+        .image-grid img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        
+img {
+opacity: 1.0;
+}
+img:hover {
+opacity: 0.5;}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to bottom, maroon, black);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex-grow: 1;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- Header -->
+        <div class="animated-header">
+            <h1>Home Page Movie Roll</h1>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="moviePage.html">Movies</a></li>
+            <li class="contact"><a href="contactPage.html">Contact</a>
+                <div class="dropdown">
+                    <a href="#">WhatsApp</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </li>
+        </ul>
+        
+        <!-- Image Grid -->
+        <div class="image-grid">
+            <img src="Arcane Saison 2 poster.jpeg" alt="Image 1">
+            <img src="Amazon_com_ Trends International Marvel Deadpool….jpeg" alt="Image 2">
+            <img src="Amazon_com_ Trends International Warner 100th….jpeg" alt="Image 3">
+            <img src="ba9a1a83-4528-46a7-9e18-3d2a3928c9af.jpeg" alt="Image 4">
+            <img src="Batman (2022) Posters.jpeg" alt="Image 5">
+            <img src="Deadpool & Wolverine ( 11_ x 17_ ) Movie Collector's Poster Print ( T4 ) B2G1F.jpeg" alt="Image 6">
+            <img src="Doctor Strange in the Multiverse Of Madness Poster.jpeg" alt="Image 7">
+            <img src="DUNE poster - Lina Ghamrawi.jpeg" alt="Image 8">
+            <img src="Fight Club.jpeg" alt="Image 9">
+            <img src="Grupo Erik_ Poster Marvel The Avengers - Endgame _ Poster da parete Marvel, 61 x 91,5 cm, Poster da muro con carta lucida e incorniciabile, The Avengers Gadget.jpeg" alt="Image 10">
+            <img src="Home Alone Movie Poster Print (27 x 40).jpeg" alt="Image 11">
+            <img src="Interstellar by Christopher Nolan Japanese alternative poster movie print.jpeg" alt="Image 12">
+            <img src="Movie Poster Design in Photoshop Full tutorial.jpeg" alt="Image 13">
+            <img src="𝔰𝔢𝔯𝔢𝔫𝔢𝔢𝔠𝔥𝔦𝔲 - follow for more!.jpeg" alt="Image 14">
+            <img src="Spider-Man Poster Movie Film Marvel Comics IntoThe Spider-Verse Photo Wall Art Picture Poster A4.jpeg" alt="Image 15">
+            <img src="Superman Poster!.jpeg" alt="Image 16">
+            <img src="The Batman Movie Poster.jpeg" alt="Image 17">
+            <img src="The Matrix Movie Poster Giclee Print - Etsy.jpeg" alt="Image 18">
+            <img src="Thor Ragnarok movie poster (b) - Thor poster.jpeg" alt="Image 19">
+            <img src="Trends International Disney - Cars Poster - Walmart_com.jpeg" alt="Image 20">
+            <img src="Howl’s Moving Castle movie poster.jpeg" alt="Image 21">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Simple Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

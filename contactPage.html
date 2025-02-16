@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Movie Roll</title>
+    <style>
+
+input[type=text] {
+width: 50%;
+transition: width .50s ease-in-out;
+}
+input[type=text]:focus {
+width: 80%;
+}
+input[type=email] {
+width: 50%;
+transition: width .50s ease-in-out;
+}
+input[type=email]:focus {
+width: 80%;
+}
+        @keyframes backgroundColorChange {
+            0% { background-color: white; color: maroon; }
+            50% { background-color: maroon; color: white; }
+            100% { background-color: white; color: maroon; }
+        }
+        .animated-header {
+            padding: 20px;
+            position: relative;
+            animation: backgroundColorChange 3s infinite alternate ease-in-out;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        ul li {
+            display: inline-block;
+            padding: 15px;
+            position: relative;
+            transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+        }
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: inline-block;
+        }
+        ul li:hover {
+            transform: scale(1.2);
+            font-weight: bold;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; background: linear-gradient(to bottom, maroon, black); color: white;">
+    
+    <!-- Header -->
+    <div class="animated-header">
+        <h1>Contact Movie Roll</h1>
+    </div>
+    
+    <!-- Navigation Menu -->
+    <ul>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="moviePage.html">Movies</a></li>
+        <li><a href="contactPage.html">Contact</a></li>
+    </ul>
+    <!-- Contact Form -->
+    <div style="padding: 20px;">
+        <h2>Contact Us</h2>
+     <!-- space -->
+      <pre>
+
+
+
+
+
+
+
+
+      </pre>
+    <!-- Contact Form -->
+        <form>
+            <label>Name:</label><br>
+            <input type="text" style="padding: 5px;"><br><br>
+            <label>Email:</label><br>
+            <input type="email" style="padding: 5px;"><br><br>
+            <label>Message:</label><br>
+            <textarea style="padding: 5px; width: 50%; height: 100px;"></textarea><br><br>
+<input type="submit" value="Send" style="background-color: maroon; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+        </form>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Simple Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
